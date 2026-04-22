@@ -1,216 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sukhada Khade | Data Scientist</title>
 
-    <link rel="stylesheet" href="assets/css/styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans&display=swap" rel="stylesheet">
 
-    <!-- =====BOX ICONS===== -->
-    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+<style>
+body {
+  margin: 0;
+  font-family: 'DM Sans', sans-serif;
+  background: #0f172a;
+  color: white;
+}
 
-    <title>Portfolio website</title>
+/* NAV */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background: rgba(0,0,0,0.8);
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.profile-img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 4px solid #38bdf8;
+  object-fit: cover;
+  animation: float 6s infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.hero span {
+  background: linear-gradient(90deg,#38bdf8,#c084fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background: #38bdf8;
+  color: black;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+/* SECTION */
+section {
+  padding: 50px;
+}
+
+/* PROJECT */
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1 1 300px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(56,189,248,0.3);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #020617;
+}
+</style>
 </head>
 
 <body>
-    <!--===== HEADER =====-->
-    <header class="l-header">
-        <nav class="nav bd-grid">
-            <div>
-                <a href="#" class="nav__logo">Portfolio</a>
-            </div>
 
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                    <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
-                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                </ul>
-            </div>
+<!-- NAV -->
+<nav>
+  <h2>Sukhada</h2>
+  <div>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
 
-            <div class="nav__toggle" id="nav-toggle">
-                <i class='bx bx-menu'></i>
-            </div>
-        </nav>
-    </header>
+<!-- HERO -->
+<section class="hero">
 
-    <main class="l-main">
-        <!--===== HOME =====-->
-        <section class="home bd-grid" id="home">
-            <div class="home__data">
-                <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Sukhada<br> Khade</span><br></h1>
+<img src="profile.jpg" class="profile-img">
 
-            </div>
+<h1>Hi, I'm <span>Sukhada Khade</span></h1>
+<h2>Data Scientist | AI/ML Engineer | NLP Specialist</h2>
 
-            <div class="home__social">
-                <a href="https://www.linkedin.com/in/sukhada-khade-582448255/" class="home__social-icon"><i
-                        class='bx bxl-linkedin'></i></a>
-                <a href="https://github.com/sukhadakhade11" class="home__social-icon"><i class='bx bxl-github'></i></a>
-            </div>
+<p>
+Building intelligent systems using Machine Learning & NLP with real-world impact.
+Achieved up to <b>97% accuracy</b> in ML models.
+</p>
 
-            <div class="home__img">
-                <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <mask id="mask0" mask-type="alpha">
-                        <path
-                            d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
-                    </mask>
-                    <g mask="url(#mask0)">
-                        <path
-                            d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
-                        <image class="home__blob-img" x="50" y="60" href="assets/img/profile.png" />
-                    </g>
-                </svg>
-            </div>
-        </section>
+<a href="Sukhada_Resume.pdf" download class="btn">Download Resume</a>
+<a href="https://linkedin.com/in/YOUR_LINKEDIN_LINK" target="_blank" class="btn">LinkedIn</a>
+<a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank" class="btn">GitHub</a>
 
-        <!--===== ABOUT =====-->
-        <section class="about section " id="about">
-            <h2 class="section-title">About</h2>
+</section>
 
-            <div class="about__container bd-grid">
-                <div class="about__img">
-                    <img src="assets/img/p1.jpg" alt="">
-                </div>
+<!-- ABOUT -->
+<section id="about">
+<h2>About Me</h2>
+<p>
+I am an aspiring Data Scientist with hands-on experience in Machine Learning, NLP, and AI solutions.
+Worked as Data Science Intern at AIVariant and trained at ExcelR.
+I specialize in building end-to-end ML pipelines and solving real-world problems using data.
+</p>
+</section>
 
-                <div>
-                    <h2 class="about__subtitle">I'am Sukhada Khade</h2>
-                    <p class="about__text">"Computer Science student at Mgm's COE Nanded with a passion for solving real-world problems through technology. Skilled in Web Development, AIML, and active on Leetcode and Hackerrank. Enthusiastic about innovation, open-source, and learning new tech."</p>
-                </div>
-            </div>
-        </section>
+<!-- PROJECTS -->
+<section id="projects">
+<h2>Projects</h2>
 
-        <!--===== SKILLS =====-->
-        <section class="skills section" id="skills">
-            <h2 class="section-title">Skills</h2>
+<div class="projects">
 
-            <div class="skills__container bd-grid">
-                <div>
-                    <h2 class="skills__subtitle">Profesional Skills</h2>
-                    <p class="skills__text">"Welcome to my portfolio! I am a passionate software developer with expertise in web development, backend engineering, and AIML. Skilled in HTML, CSS, JavaScript, Next.js, Python, Flask, MongoDB, and MySQL, I create dynamic, responsive, and secure digital solutions. Explore my work to see how I bring ideas to life."</p>
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bxl-html5 skills__icon'></i>
-                            <span class="skills__name">HTML</span>
-                        </div>
-                        <div class="skills__bar skills__html">
+<div class="card">
+<h3>Telecom Churn Prediction</h3>
+<p>97% accuracy using XGBoost + Streamlit dashboard</p>
+<a href="https://github.com/YOUR_GITHUB_USERNAME/churn-project" target="_blank">GitHub</a> |
+<a href="https://your-streamlit-link-1.streamlit.app" target="_blank">Live Demo</a>
+</div>
 
-                        </div>
-                        <div>
-                            <span class="skills__percentage">95%</span>
-                        </div>
-                    </div>
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bxl-css3 skills__icon'></i>
-                            <span class="skills__name">CSS</span>
-                        </div>
-                        <div class="skills__bar skills__css">
+<div class="card">
+<h3>AI Health Navigator</h3>
+<p>Disease prediction using SVM + LLM chatbot</p>
+<a href="https://github.com/YOUR_GITHUB_USERNAME/health-navigator" target="_blank">GitHub</a> |
+<a href="https://your-streamlit-link-2.streamlit.app" target="_blank">Live Demo</a>
+</div>
 
-                        </div>
-                        <div>
-                            <span class="skills__percentage">85%</span>
-                        </div>
-                    </div>
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bxl-javascript skills__icon'></i>
-                            <span class="skills__name">JAVASCRIPT</span>
-                        </div>
-                        <div class="skills__bar skills__js">
+<div class="card">
+<h3>Sentiment Analysis</h3>
+<p>NLP model using TF-IDF + SVM (92% accuracy)</p>
+<a href="https://github.com/YOUR_GITHUB_USERNAME/sentiment-analysis" target="_blank">GitHub</a> |
+<a href="https://your-streamlit-link-3.streamlit.app" target="_blank">Live Demo</a>
+</div>
 
-                        </div>
-                        <div>
-                            <span class="skills__percentage">75%</span>
-                        </div>
-                    </div>
+<div class="card">
+<h3>Object Detection</h3>
+<p>VGG16 + OpenCV real-time detection</p>
+<a href="https://github.com/YOUR_GITHUB_USERNAME/object-detection" target="_blank">GitHub</a>
+</div>
 
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bxs-paint skills__icon'></i>
-                            <span class="skills__name">UX/UI</span>
-                        </div>
-                        <div class="skills__bar skills__ux">
+</div>
+</section>
 
-                        </div>
-                        <div>
-                            <span class="skills__percentage">85%</span>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <img src="assets/img/work3.jpg" alt="" class="skills__img">
-                </div>
-            </div>
-        </section>
-        <!--projects-->
-        <section class="projects section" id="projects">
-            <h2 class="section-title">Projects</h2>
-            <div class="project-card">
-                <h3>Project 1</h3>
-                <p>
-                    Contributed to the HITK Tech Community website through the GSSOC program, enhancing open-source development.
-                    Collaborated effectively with developers, showcasing strong teamwork.
-                </p>
-                <a href="https://github.com/sukhadak11/Community-Website.git" class="btn">View Project</a>
-                <a href="https://hitk-tech-community.netlify.app/"><img src="assets/img/HITK.png" alt="Project 2">
-                </div>
-            <div class="project-card">
-                <h3>Project 2</h3>
-                <p>
-                    Developed a Health Navigator utilizing advanced ML models to accurately predict diseases from user-input symptoms.
-                    Implemented tailored recommendations for medicines, prescriptions, and workout routines based on predictive analysis.
-                </p>
-                <a href="https://github.com/sukhadak11/Health_Navigator.git" class="btn">View Project</a>
-                <a href="https://github.com/sukhadak11/Health_Navigator.git"><img src="assets/img/Health Navigator.png" alt="Project 2">
-                </div>
-            <div class="project-card">
-                <h3>Project 3</h3>
-                <p>
-                    This Flashcards Maker is designed to help users create and manage flashcards for efficient learning and memorization.
-                    It provides a user-friendly interface for creating and organizing flashcards, allowing users to easily store and review information.
-                </p>
-                <a href="https://github.com/sukhadak11/Great_Mates_HRCNO.git" class="btn">View Project</a>
-                <a href="https://sukhadak11.github.io/Great_Mates_HRCNO/"><img src="assets/img/flask.png" alt="Project 2">
-            </div>
+<!-- CONTACT -->
+<section id="contact">
+<h2>Contact</h2>
+<p>Email: khadesukhada@gmail.com</p>
+<p>Phone: +91 9579999712</p>
+</section>
 
-            <!-- Add more project cards as needed -->
-        </section>
+<!-- FOOTER -->
+<footer>
+<p>© 2026 Sukhada Khade</p>
+</footer>
 
-
-        <!--===== CONTACT =====-->
-        <section class="contact section" id="contact">
-            <h2 class="section-title">Contact</h2>
-
-            <div class="contact__container bd-grid">
-                <form action="" class="contact__form">
-                    <input type="text" placeholder="Name" class="contact__input">
-                    <input type="mail" placeholder="Email" class="contact__input">
-                    <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                    <input type="button" value="Enter" class="contact__button button">
-                </form>
-            </div>
-        </section>
-    </main>
-
-    <!--===== FOOTER =====-->
-    <footer class="footer">
-        <p class="footer__title">Sukhada Khade</p>
-        <div class="footer__social">
-        
-        </div>
-        <p class="footer__copy">THANK YOU!</p>
-    </footer>
-
-
-    <!--===== SCROLL REVEAL =====-->
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-    <!--===== MAIN JS =====-->
-    <script src="assets/js/main.js"></script>
 </body>
-
 </html>
